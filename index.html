@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./public/style.css">
+    <link rel="stylesheet" href="./src/style.css">
+    
+    <title>Card Details</title>
+</head>
+<body class="h-full">
+    <div class="grid grid-cols-1 lg:grid-cols-2 h-full ">
+         <!--Form Section-->
+         <div class="flex w-full bg-yellow-200  justify-center">
+            <div class="flex justify-center my-auto mx-auto md:w-full md:m-16 sm:w-full sm:w-16 sm:m-10 ">
+                <form action="../public/index.html" class=" bg-white shadow-md rounded p-8 w-full " id="form" method="GET">
+                    <div class="mb-4">
+                        <h4 class="block text-gray-700 text-3xl font-bold">Write Your Details</h4>
+                    </div>
+                  <div class="mb-4 ">
+                    <label class="block text-gray-700 text-sm font-bold mb-2" for="name">
+                      Name
+                    </label>
+                    <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="name" type="text" placeholder="Name" required>
+                    <!-- <p class="text-red-500" id="nameError">*Please Enter a Valid Name</p> -->
+                  </div>
+                  <div class="mb-4">
+                    <label class="block text-gray-700 text-sm font-bold mb-2" for="about">
+                      About
+                    </label>
+                    <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="about" type="text" placeholder="About" required>
+                    <!-- <p class="text-red-500" id="aboutError">*Please Enter a Valid About</p> -->
+
+                  </div>
+                  <div class="mb-4">
+                    <label class="block text-gray-700 text-sm font-bold mb-2" for="address">
+                      Address
+                    </label>
+                    <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="address" type="text" placeholder="Address" required >
+                    <!-- <p class="text-red-500" id="addressError">*Please Enter a Valid Address</p> -->
+
+                  </div>
+                  <div class="mb-4">
+                    <label class="block text-gray-700 text-sm font-bold mb-2" for="username">
+                      Phone No.
+                    </label>
+                    <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="phoneNo" type="number" placeholder="Phone No." required maxlength="10">
+                    <!-- <p class="text-red-500" id="phoneError">*Please Enter a Phone No.</p> -->
+
+                  </div>
+                  <div class="mb-4">
+                    <label class="block text-gray-700 text-sm font-bold mb-2" for="username">
+                      College   
+                    </label>
+                    <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="college" type="text" placeholder="College" required>
+                    <!-- <p class="text-red-500" id="collegeError">*Please Enter a Valid College</p> -->
+
+                  </div>
+                  <div class="flex items-center justify-center">
+                    <!-- <button id="submitButton" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="submit">
+                      SUBMIT
+                    </button> -->
+                    <input type="submit" value="SUBMIT" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">
+                    
+                  </div>
+                </form>
+              </div>
+         </div>       
+            
+
+        
+        <!--Card Section-->
+            <div class="flex w-full bg-yellow-200  justify-center">
+                <div class="flex justify-center my-auto mx-auto md:w-full md:m-16 sm:w-full sm:w-16 sm:m-10 ">
+                    <section class=" bg-red-400  shadow-md rounded p-8 w-full ">
+                        <div class="flex mb-4 justify-center mt-10">
+                            <h4 class="block text-white text-3xl font-bold">Details</h4>
+                        </div>
+                      <div class="mb-4 flex ">
+                        <label class="block text-white text-xl font-bold mb-2 mr-4" for="name">
+                          Name: 
+                        </label>
+                        <p id="nameText" class="text-white text-xl font-bold p-0.5"></p>
+                      </div>
+                      <div class="mb-4 ">
+                        <div class="mb-4 flex">
+                        <label class="block text-white text-xl font-bold mb-2 mr-4" for="about">
+                          About:
+                        </label>
+                        <p id="aboutText" class="text-white text-xl font-bold p-0.5"></p>
+                      </div>
+                      <div class="mb-4 ">
+                        <div class="mb-4 flex">
+                        <label class="block text-white text-xl font-bold mb-2 mr-4" for="username">
+                          Address: 
+                        </label>
+                        <p id="addressText" class="text-white text-xl font-bold p-0.5"></p>
+                      </div>
+                      <div class="mb-4 ">
+                        <div class="mb-4 flex">
+                        <label class=" text-white text-xl font-bold mb-2 mr-4" for="username">
+                          Phone No.:
+                        </label>
+                        <p id="phoneText" class="text-white text-xl font-bold p-0.5"></p>
+                      </div>
+                      <div class="mb-4 flex">
+                        <label class="block text-white text-xl font-bold mb-2 mr-4" for="username">
+                          College:  
+                        </label>
+                        <p id="collegeText" class="text-white text-xl font-bold p-0.5"></p>
+                      </div>
+                      
+                
+                    </section>
+                  </div>
+            </div>
+    </div>       
+        
+    <script src="./public/index.js"></script> 
+</body>
+</html>
